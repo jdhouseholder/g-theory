@@ -1,0 +1,19 @@
+[project]
+name = "g-theory"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=0.20",
+    "jax[cuda12]>=0.10.1",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.4",
+    "numpyro>=0.21.0",
+    "pandas>=3.0.2",
+    "pyro-ppl>=1.9.1",
+    "torch-measure[data]",
+]
+
+[tool.uv.sources]
+torch-measure = { git = "https://github.com/aims-foundations/torch_measure" }
